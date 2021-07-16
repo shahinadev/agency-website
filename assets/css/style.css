@@ -418,3 +418,37 @@ ul.links {
   margin-top: 44px;
   background: #6a6565;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .services_container,
+  .about_container,
+  .btn_group,
+  .header_section {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .project_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .half_width,
+  .services_header,
+  .header_banner {
+    width: 100%;
+  }
+  .btn_group {
+    margin: 0;
+    padding: 0;
+  }
+  .btn_group > .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn_group > .btn:first-child {
+    margin-bottom: 30px;
+  }
+}
